@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Investment Policy Statement Questionnaire 家庭投資政策聲明問卷</title>
+  <style>
+    :root {
+      --primary: #1a5276;
+      --primary-light: #2980b9;
+      --accent: #27ae60;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --border: #e0e4e8;
+      --border-focus: #2980b9;
+      --text: #2c3e50;
+      --text-muted: #6c757d;
+      --radius: 10px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,0.10);
+      --transition: 0.2s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "PingFang HK", sans-serif;
+      margin: 0;
+      padding: 24px 16px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary);
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    h1 + p, h1 ~ p {
+      max-width: 900px;
+      margin: 0 auto 24px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    fieldset {
+      border: 1px solid var(--border);
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      border-radius: var(--radius);
+      background: var(--card-bg);
+    }
+
+    legend {
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 4px 12px;
+      color: var(--primary);
+      background: #eaf2f8;
+      border-radius: 6px;
+    }
+
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .sub-label {
+      font-weight: 400;
+      font-size: 0.88rem;
+      margin-top: 4px;
+      margin-left: 12px;
+      color: var(--text-muted);
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      max-width: 620px;
+      padding: 10px 14px;
+      margin-top: 6px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.93rem;
+      background: #fdfdfd;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.12);
+    }
+
+    textarea {
+      min-height: 70px;
+      resize: vertical;
+    }
+
+    .inline-options {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+    }
+
+    .inline-options label {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-top: 0;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .inline-options label:hover {
+      background: #eaf2f8;
+    }
+
+    .inline-options input[type="radio"],
+    .inline-options input[type="checkbox"] {
+      margin-right: 6px;
+      accent-color: var(--primary-light);
+    }
+
+    details {
+      margin-bottom: 14px;
+      border: 1px solid var(--border);
+      padding: 0;
+      border-radius: var(--radius);
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      transition: box-shadow var(--transition);
+      overflow: hidden;
+    }
+
+    details:hover {
+      box-shadow: var(--shadow-hover);
+    }
+
+    details[open] {
+      box-shadow: var(--shadow-hover);
+    }
+
+    details > summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.05rem;
+      outline: none;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
+      color: #fff;
+      list-style: none;
+      user-select: none;
+      transition: background var(--transition);
+    }
+
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details > summary::before {
+      content: '▶';
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 0.8em;
+      transition: transform var(--transition);
+    }
+
+    details[open] > summary::before {
+      transform: rotate(90deg);
+    }
+
+    details > summary:hover {
+      background: linear-gradient(135deg, #154360 0%, #2471a3 100%);
+    }
+
+    details > :not(summary) {
+      padding: 0 20px;
+    }
+
+    .section-description {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 16px 0 12px;
+      padding: 10px 14px;
+      background: #fafbfc;
+      border-left: 3px solid var(--primary-light);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .buttons button {
+      padding: 12px 24px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+
+    .buttons button:active {
+      transform: scale(0.97);
+    }
+
+    #generateEmail {
+      background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(39, 174, 96, 0.25);
+    }
+
+    #generateEmail:hover {
+      background: linear-gradient(135deg, #219a52 0%, #27ae60 100%);
+      box-shadow: 0 5px 16px rgba(39, 174, 96, 0.35);
+    }
+
+    #exportJson {
+      background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(41, 128, 185, 0.25);
+    }
+
+    #exportJson:hover {
+      background: linear-gradient(135deg, #2471a3 0%, #2980b9 100%);
+      box-shadow: 0 5px 16px rgba(41, 128, 185, 0.35);
+    }
+
+    #importJsonBtn {
+      background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(142, 68, 173, 0.25);
+    }
+
+    #importJsonBtn:hover {
+      background: linear-gradient(135deg, #7d3c98 0%, #8e44ad 100%);
+      box-shadow: 0 5px 16px rgba(142, 68, 173, 0.35);
+    }
+
+    .buttons button[type="reset"] {
+      background: #ecf0f1;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .buttons button[type="reset"]:hover {
+      background: #dfe6e9;
+    }
+
+    #emailSection {
+      margin-top: 30px;
+      padding: 24px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    #emailOutput {
+      width: 100%;
+      max-width: 100%;
+      min-height: 250px;
+      margin-top: 12px;
+      white-space: pre-wrap;
+      font-family: "Cascadia Code", "Fira Code", monospace;
+      font-size: 0.85rem;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fafbfc;
+    }
+
+    .hint {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 8px;
+      }
+      h1 {
+        font-size: 1.35rem;
+      }
+      fieldset {
+        padding: 14px 12px;
+      }
+      details > summary {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+      }
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .inline-options {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Family Investment Policy Statement (IPS) Questionnaire<br/>家庭投資政策聲明 (IPS) 問卷</h1>
+  <p>
+    This questionnaire is for a family (client and spouse/partner). Please complete the individual sections for each person, then the family-level sections together. When finished, click "Generate Email Text", then copy and paste the result into an email back to your adviser.<br/>
+    本問卷適用於家庭（客戶及配偶／伴侶）。請分別填寫個人部分，然後共同完成家庭層面的部分。完成後，請點擊「生成電郵文本」，然後將結果複製並貼上至電郵發送給您的顧問。
+  </p>
+
+  <form id="ipsForm" novalidate>
+    <!-- 1. Family Profile and Context -->
+    <details open>
+      <summary>1. Family Profile and Context 家庭概況及背景</summary>
+      <div class="section-description">
+        Identify the family, each spouse, and the overall scope of the IPS.<br/>
+        識別家庭成員、各配偶及投資政策聲明的整體範圍。
+      </div>
+
+      <fieldset>
+        <legend>Family Information 家庭資料</legend>
+
+        <label for="familyName">1.1 Family name (e.g., Smith Family) 家庭姓氏（例如：陳氏家庭）</label>
+        <input type="text" id="familyName" name="familyName" required />
+
+        <label for="familyCountry">1.2 Country of tax residence (family) 稅務居住地（家庭）</label>
+        <input type="text" id="familyCountry" name="familyCountry" required />
+
+        <label for="childrenDependents">1.3 Children / dependents (number and ages) 子女／受養人（人數及年齡）</label>
+        <textarea id="childrenDependents" name="childrenDependents"></textarea>
+
+        <label for="familyScope">1.4 Scope of this IPS (family-level) 本投資政策聲明的範圍（家庭層面）</label>
+        <textarea id="familyScope" name="familyScope" placeholder="E.g., all investable family assets; or specific family accounts only. 例如：所有家庭可投資資產；或僅特定家庭帳戶。" required></textarea>
+
+        <label for="familyPortfolioValue">1.5 Current total value of assets covered by this IPS (family) 本投資政策聲明涵蓋的資產總現值（家庭）</label>
+        <input type="number" id="familyPortfolioValue" name="familyPortfolioValue" min="0" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Client (Primary) – Personal and Financial 客戶（主要）— 個人及財務資料</legend>
+
+        <label for="clientName">1.6 Client name 客戶姓名</label>
+        <input type="text" id="clientName" name="clientName" required />
+
+        <label for="clientAge">1.7 Client age 客戶年齡</label>
+        <input type="number" id="clientAge" name="clientAge" min="18" max="120" required />
+
+        <label>1.8 Client employment status 客戶就業狀況</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientEmploymentStatus" value="Employed" required /> Employed 受僱</label>
+          <label><input type="radio" name="clientEmploymentStatus" value="Self-employed" /> Self-employed 自僱</label>
+          <label><input type="radio" name="clientEmploymentStatus" value="Retired" /> Retired 已退休</label>
+          <label><input type="radio" name="clientEmploymentStatus" value="Student" /> Student 學生</label>
+          <label><input type="radio" name="clientEmploymentStatus" value="Other" /> Other 其他</label>
+        </div>
+
+        <label>1.9 Client income stability (next 5–10 years) 客戶收入穩定性（未來5至10年）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientIncomeStability" value="Very stable" required /> Very stable 非常穩定</label>
+          <label><input type="radio" name="clientIncomeStability" value="Somewhat stable" /> Somewhat stable 尚算穩定</label>
+          <label><input type="radio" name="clientIncomeStability" value="Uncertain" /> Uncertain 不確定</label>
+          <label><input type="radio" name="clientIncomeStability" value="At risk" /> At risk 有風險</label>
+        </div>
+
+        <label for="clientAnnualIncome">1.10 Client annual gross income 客戶年度總收入</label>
+        <input type="number" id="clientAnnualIncome" name="clientAnnualIncome" min="0" required />
+
+        <label for="clientInvestYears">1.11 Client investing experience (years) 客戶投資經驗（年數）</label>
+        <input type="number" id="clientInvestYears" name="clientInvestYears" min="0" max="80" required />
+
+        <label>1.12 Client products used (check all that apply) 客戶曾使用的投資產品（選擇所有適用項）</label>
+        <div class="inline-options">
+          <label><input type="checkbox" name="clientProductsUsed" value="Stocks" /> Stocks 股票</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="FundsETFs" /> Funds / ETFs 基金／交易所買賣基金</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="Bonds" /> Bonds 債券</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="Options" /> Options 期權</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="Alternatives" /> Alternatives 另類投資</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="Crypto" /> Crypto 加密貨幣</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="FX" /> FX 外匯</label>
+          <label><input type="checkbox" name="clientProductsUsed" value="Other" /> Other 其他</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Spouse / Partner – Personal and Financial 配偶／伴侶 — 個人及財務資料</legend>
+
+        <label for="spouseName">1.13 Spouse/partner name 配偶／伴侶姓名</label>
+        <input type="text" id="spouseName" name="spouseName" required />
+
+        <label for="spouseAge">1.14 Spouse/partner age 配偶／伴侶年齡</label>
+        <input type="number" id="spouseAge" name="spouseAge" min="18" max="120" required />
+
+        <label>1.15 Spouse employment status 配偶就業狀況</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseEmploymentStatus" value="Employed" required /> Employed 受僱</label>
+          <label><input type="radio" name="spouseEmploymentStatus" value="Self-employed" /> Self-employed 自僱</label>
+          <label><input type="radio" name="spouseEmploymentStatus" value="Retired" /> Retired 已退休</label>
+          <label><input type="radio" name="spouseEmploymentStatus" value="Student" /> Student 學生</label>
+          <label><input type="radio" name="spouseEmploymentStatus" value="Other" /> Other 其他</label>
+        </div>
+
+        <label>1.16 Spouse income stability (next 5–10 years) 配偶收入穩定性（未來5至10年）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseIncomeStability" value="Very stable" required /> Very stable 非常穩定</label>
+          <label><input type="radio" name="spouseIncomeStability" value="Somewhat stable" /> Somewhat stable 尚算穩定</label>
+          <label><input type="radio" name="spouseIncomeStability" value="Uncertain" /> Uncertain 不確定</label>
+          <label><input type="radio" name="spouseIncomeStability" value="At risk" /> At risk 有風險</label>
+        </div>
+
+        <label for="spouseAnnualIncome">1.17 Spouse annual gross income 配偶年度總收入</label>
+        <input type="number" id="spouseAnnualIncome" name="spouseAnnualIncome" min="0" required />
+
+        <label for="spouseInvestYears">1.18 Spouse investing experience (years) 配偶投資經驗（年數）</label>
+        <input type="number" id="spouseInvestYears" name="spouseInvestYears" min="0" max="80" required />
+
+        <label>1.19 Spouse products used (check all that apply) 配偶曾使用的投資產品（選擇所有適用項）</label>
+        <div class="inline-options">
+          <label><input type="checkbox" name="spouseProductsUsed" value="Stocks" /> Stocks 股票</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="FundsETFs" /> Funds / ETFs 基金／交易所買賣基金</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="Bonds" /> Bonds 債券</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="Options" /> Options 期權</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="Alternatives" /> Alternatives 另類投資</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="Crypto" /> Crypto 加密貨幣</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="FX" /> FX 外匯</label>
+          <label><input type="checkbox" name="spouseProductsUsed" value="Other" /> Other 其他</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Family-Level Financial Picture 家庭整體財務狀況</legend>
+
+        <label for="familyAnnualIncome">1.20 Approximate total family annual gross income 家庭年度總收入概數</label>
+        <input type="number" id="familyAnnualIncome" name="familyAnnualIncome" min="0" required />
+
+        <label for="familyAnnualSavings">1.21 Approximate total family annual savings capacity 家庭年度儲蓄能力概數</label>
+        <input type="number" id="familyAnnualSavings" name="familyAnnualSavings" min="0" required />
+
+        <label for="familyNonPortfolioAssets">1.22 Significant non-portfolio assets (family) 重要的非投資組合資產（家庭）</label>
+        <textarea id="familyNonPortfolioAssets" name="familyNonPortfolioAssets"></textarea>
+
+        <label for="familyDebts">1.23 Significant family debts (type, amount, rate, maturity) 重要家庭負債（類型、金額、利率、到期日）</label>
+        <textarea id="familyDebts" name="familyDebts"></textarea>
+
+        <label for="familyDrawdownExperience">1.24 Past family experience with large drawdowns and reactions 家庭過往經歷大幅虧損時的反應</label>
+        <textarea id="familyDrawdownExperience" name="familyDrawdownExperience"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 2. Family Goals and Return Objectives -->
+    <details>
+      <summary>2. Family Goals and Return Objectives 家庭目標及回報目標</summary>
+      <div class="section-description">
+        Family-level objectives and cash flows that the joint IPS should serve.<br/>
+        家庭層面的目標及聯合投資政策聲明應服務的現金流。
+      </div>
+
+      <fieldset>
+        <legend>Family Financial Goals 家庭財務目標</legend>
+
+        <label for="goal1">2.1 Goal 1 – description 目標一 — 描述</label>
+        <input type="text" id="goal1" name="goal1" required />
+        <label for="goal1Amount" class="sub-label">Target amount (today's money) 目標金額（以今日幣值計）</label>
+        <input type="number" id="goal1Amount" name="goal1Amount" min="0" required />
+        <label for="goal1Date" class="sub-label">Target date 目標日期</label>
+        <input type="date" id="goal1Date" name="goal1Date" required />
+
+        <label for="goal2">2.2 Goal 2 – description 目標二 — 描述</label>
+        <input type="text" id="goal2" name="goal2" />
+        <label for="goal2Amount" class="sub-label">Target amount 目標金額</label>
+        <input type="number" id="goal2Amount" name="goal2Amount" min="0" />
+        <label for="goal2Date" class="sub-label">Target date 目標日期</label>
+        <input type="date" id="goal2Date" name="goal2Date" />
+
+        <label for="goal3">2.3 Goal 3 – description 目標三 — 描述</label>
+        <input type="text" id="goal3" name="goal3" />
+        <label for="goal3Amount" class="sub-label">Target amount 目標金額</label>
+        <input type="number" id="goal3Amount" name="goal3Amount" min="0" />
+        <label for="goal3Date" class="sub-label">Target date 目標日期</label>
+        <input type="date" id="goal3Date" name="goal3Date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Family Spending and Withdrawals 家庭支出及提款</legend>
+
+        <label>2.4 Will the family draw regular income from this portfolio? 家庭是否會從本投資組合定期提取收入？</label>
+        <div class="inline-options">
+          <label><input type="radio" name="regularIncome" value="Yes" required /> Yes 是</label>
+          <label><input type="radio" name="regularIncome" value="No" /> No 否</label>
+        </div>
+
+        <label for="regularIncomeAmount" class="sub-label">If yes, how much per year (amount or %)? 如是，每年提取多少（金額或百分比）？</label>
+        <input type="text" id="regularIncomeAmount" name="regularIncomeAmount" />
+
+        <label>2.5 Is this family spending flexible or fixed? 家庭支出是靈活還是固定的？</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spendingFlexibility" value="Flexible" required /> Flexible 靈活</label>
+          <label><input type="radio" name="spendingFlexibility" value="Mostly flexible" /> Mostly flexible 大致靈活</label>
+          <label><input type="radio" name="spendingFlexibility" value="Mostly fixed" /> Mostly fixed 大致固定</label>
+          <label><input type="radio" name="spendingFlexibility" value="Fixed" /> Fixed 固定</label>
+        </div>
+
+        <label for="oneOffNeeds">2.6 Known large one-off family cash needs (amount & timing) 已知的大額一次性家庭現金需求（金額及時間）</label>
+        <textarea id="oneOffNeeds" name="oneOffNeeds"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Return Objectives and Horizon (Family) 回報目標及投資期限（家庭）</legend>
+
+        <label for="minReturn">2.7 Minimum required return for the family (if any) 家庭最低要求回報（如有）</label>
+        <input type="text" id="minReturn" name="minReturn" />
+
+        <label>2.8 Primary family objective 家庭主要投資目標</label>
+        <div class="inline-options">
+          <label><input type="radio" name="primaryObjective" value="Capital preservation" required /> Capital preservation 資本保值</label>
+          <label><input type="radio" name="primaryObjective" value="Balanced growth and income" /> Balanced growth and income 平衡增長與收入</label>
+          <label><input type="radio" name="primaryObjective" value="Aggressive long-term growth" /> Aggressive long-term growth 進取長期增長</label>
+        </div>
+
+        <label for="firstWithdrawal">2.9 When is the first meaningful family withdrawal expected? 預計何時首次大額提款？</label>
+        <input type="date" id="firstWithdrawal" name="firstWithdrawal" />
+
+        <label for="totalHorizon">2.10 Expected total family investment horizon (years) 預期家庭總投資期限（年數）</label>
+        <input type="number" id="totalHorizon" name="totalHorizon" min="0" />
+
+        <label for="horizonNotes" class="sub-label">Is the horizon multi-stage (e.g., accumulation then joint retirement)? 投資期限是否分多個階段（例如：累積期後共同退休）？</label>
+        <textarea id="horizonNotes" name="horizonNotes"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 3. Individual Risk Tolerance (Client and Spouse) -->
+    <details>
+      <summary>3. Individual Risk Tolerance (Client and Spouse) 個人風險承受能力（客戶及配偶）</summary>
+      <div class="section-description">
+        Capture risk preferences for both spouses.<br/>
+        了解雙方的風險偏好。
+      </div>
+
+      <fieldset>
+        <legend>Client – Risk Tolerance 客戶 — 風險承受能力</legend>
+
+        <label>3.1 Client reaction to a 20% loss 客戶面對20%虧損時的反應</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientLoss20Reaction" value="Sell most risky assets" required /> Sell most risky assets 賣出大部分高風險資產</label>
+          <label><input type="radio" name="clientLoss20Reaction" value="Sell some risky assets" /> Sell some risky assets 賣出部分高風險資產</label>
+          <label><input type="radio" name="clientLoss20Reaction" value="Hold and wait" /> Hold and wait 持有並等待</label>
+          <label><input type="radio" name="clientLoss20Reaction" value="Invest more" /> Invest additional cash 追加投資</label>
+        </div>
+
+        <label for="clientMaxShortTermLoss">3.2 Client max short-term loss tolerable (%, or amount) 客戶可承受的最大短期虧損（百分比或金額）</label>
+        <input type="text" id="clientMaxShortTermLoss" name="clientMaxShortTermLoss" required />
+
+        <label>3.3 Client preferred 10-year path 客戶偏好的10年投資路徑</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientRiskReturnPreference" value="Portfolio A" required /> A: 3%/yr, worst –5%, best +10% 年回報3%，最差–5%，最好+10%</label>
+          <label><input type="radio" name="clientRiskReturnPreference" value="Portfolio B" /> B: 5%/yr, worst –15%, best +20% 年回報5%，最差–15%，最好+20%</label>
+          <label><input type="radio" name="clientRiskReturnPreference" value="Portfolio C" /> C: 7%/yr, worst –30%, best +35% 年回報7%，最差–30%，最好+35%</label>
+        </div>
+
+        <label for="clientPastCrisisBehavior">3.4 Client behaviour in past crises 客戶在過往危機中的行為</label>
+        <textarea id="clientPastCrisisBehavior" name="clientPastCrisisBehavior" required></textarea>
+
+        <label>3.5 Client risk-taking personality 客戶承擔風險的性格</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientRiskPersonality" value="Conservative" required /> Conservative 保守</label>
+          <label><input type="radio" name="clientRiskPersonality" value="Moderate" /> Moderate 穩健</label>
+          <label><input type="radio" name="clientRiskPersonality" value="Aggressive" /> Aggressive 進取</label>
+        </div>
+
+        <label>3.6 Client statement: "I would rather accept large losses than miss high long-term returns." 客戶聲明：「我寧願承受大幅虧損，也不願錯過長期高回報。」</label>
+        <div class="inline-options">
+          <label><input type="radio" name="clientLossStatement" value="Strongly agree" required /> Strongly agree 非常同意</label>
+          <label><input type="radio" name="clientLossStatement" value="Agree" /> Agree 同意</label>
+          <label><input type="radio" name="clientLossStatement" value="Neutral" /> Neutral 中立</label>
+          <label><input type="radio" name="clientLossStatement" value="Disagree" /> Disagree 不同意</label>
+          <label><input type="radio" name="clientLossStatement" value="Strongly disagree" /> Strongly disagree 非常不同意</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Spouse – Risk Tolerance 配偶 — 風險承受能力</legend>
+
+        <label>3.7 Spouse reaction to a 20% loss 配偶面對20%虧損時的反應</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseLoss20Reaction" value="Sell most risky assets" required /> Sell most risky assets 賣出大部分高風險資產</label>
+          <label><input type="radio" name="spouseLoss20Reaction" value="Sell some risky assets" /> Sell some risky assets 賣出部分高風險資產</label>
+          <label><input type="radio" name="spouseLoss20Reaction" value="Hold and wait" /> Hold and wait 持有並等待</label>
+          <label><input type="radio" name="spouseLoss20Reaction" value="Invest more" /> Invest additional cash 追加投資</label>
+        </div>
+
+        <label for="spouseMaxShortTermLoss">3.8 Spouse max short-term loss tolerable (%, or amount) 配偶可承受的最大短期虧損（百分比或金額）</label>
+        <input type="text" id="spouseMaxShortTermLoss" name="spouseMaxShortTermLoss" required />
+
+        <label>3.9 Spouse preferred 10-year path 配偶偏好的10年投資路徑</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseRiskReturnPreference" value="Portfolio A" required /> A: 3%/yr, worst –5%, best +10% 年回報3%，最差–5%，最好+10%</label>
+          <label><input type="radio" name="spouseRiskReturnPreference" value="Portfolio B" /> B: 5%/yr, worst –15%, best +20% 年回報5%，最差–15%，最好+20%</label>
+          <label><input type="radio" name="spouseRiskReturnPreference" value="Portfolio C" /> C: 7%/yr, worst –30%, best +35% 年回報7%，最差–30%，最好+35%</label>
+        </div>
+
+        <label for="spousePastCrisisBehavior">3.10 Spouse behaviour in past crises 配偶在過往危機中的行為</label>
+        <textarea id="spousePastCrisisBehavior" name="spousePastCrisisBehavior" required></textarea>
+
+        <label>3.11 Spouse risk-taking personality 配偶承擔風險的性格</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseRiskPersonality" value="Conservative" required /> Conservative 保守</label>
+          <label><input type="radio" name="spouseRiskPersonality" value="Moderate" /> Moderate 穩健</label>
+          <label><input type="radio" name="spouseRiskPersonality" value="Aggressive" /> Aggressive 進取</label>
+        </div>
+
+        <label>3.12 Spouse statement: "I would rather accept large losses than miss high long-term returns." 配偶聲明：「我寧願承受大幅虧損，也不願錯過長期高回報。」</label>
+        <div class="inline-options">
+          <label><input type="radio" name="spouseLossStatement" value="Strongly agree" required /> Strongly agree 非常同意</label>
+          <label><input type="radio" name="spouseLossStatement" value="Agree" /> Agree 同意</label>
+          <label><input type="radio" name="spouseLossStatement" value="Neutral" /> Neutral 中立</label>
+          <label><input type="radio" name="spouseLossStatement" value="Disagree" /> Disagree 不同意</label>
+          <label><input type="radio" name="spouseLossStatement" value="Strongly disagree" /> Strongly disagree 非常不同意</label>
+        </div>
+      </fieldset>
+    </details>
+
+    <!-- 4. Family Constraints -->
+    <details>
+      <summary>4. Family Constraints (Liquidity, Time, Tax, Legal, Unique) 家庭限制（流動性、時間、稅務、法律、特殊情況）</summary>
+      <div class="section-description">
+        Joint family constraints relevant to the IPS.<br/>
+        與投資政策聲明相關的家庭共同限制。
+      </div>
+
+      <fieldset>
+        <legend>Liquidity and Time 流動性及時間</legend>
+
+        <label for="cashBuffer">4.1 Desired family cash buffer (months of expenses or % of portfolio) 期望的家庭現金緩衝（月數開支或投資組合百分比）</label>
+        <input type="text" id="cashBuffer" name="cashBuffer" />
+
+        <label for="otherLiquidity">4.2 Other family liquidity considerations 其他家庭流動性考慮</label>
+        <textarea id="otherLiquidity" name="otherLiquidity"></textarea>
+
+        <label>4.3 Time horizon type (family) 時間期限類型（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="horizonType" value="Single-stage" /> Single-stage 單一階段</label>
+          <label><input type="radio" name="horizonType" value="Multi-stage" /> Multi-stage 多階段</label>
+        </div>
+
+        <label for="horizonDetail" class="sub-label">If multi-stage, describe family stages and timing. 如為多階段，請描述家庭各階段及時間安排。</label>
+        <textarea id="horizonDetail" name="horizonDetail"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tax, Legal, and Unique Circumstances 稅務、法律及特殊情況</legend>
+
+        <label for="taxRate">4.4 Family marginal tax rates (income and capital gains) 家庭邊際稅率（收入及資本增值）</label>
+        <textarea id="taxRate" name="taxRate"></textarea>
+
+        <label for="taxContainers">4.5 Tax containers (family-level) 稅務優惠帳戶（家庭層面）</label>
+        <textarea id="taxContainers" name="taxContainers"></textarea>
+
+        <label for="legalConstraints">4.6 Legal or regulatory constraints (family) 法律或監管限制（家庭）</label>
+        <textarea id="legalConstraints" name="legalConstraints"></textarea>
+
+        <label for="esgPreferences">4.7 ESG / ethical preferences, exclusions, or themes (family) ESG／道德偏好、排除項目或主題（家庭）</label>
+        <textarea id="esgPreferences" name="esgPreferences"></textarea>
+
+        <label for="concentratedHoldings">4.8 Concentrated holdings the family must keep 家庭必須保留的集中持倉</label>
+        <textarea id="concentratedHoldings" name="concentratedHoldings"></textarea>
+
+        <label for="uniqueCircumstances">4.9 Any other unique family circumstances 其他特殊家庭情況</label>
+        <textarea id="uniqueCircumstances" name="uniqueCircumstances"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 5. Family Asset Allocation and Preferences -->
+    <details>
+      <summary>5. Family Asset Allocation and Product Preferences 家庭資產配置及產品偏好</summary>
+      <div class="section-description">
+        Joint family-level preferences for asset mix and implementation.<br/>
+        家庭層面的資產組合及實施偏好。
+      </div>
+
+      <fieldset>
+        <legend>Strategic Asset Allocation (Family) 策略性資產配置（家庭）</legend>
+
+        <label>5.1 Preferred core mix for the family portfolio 家庭投資組合的偏好核心配置</label>
+        <div class="inline-options">
+          <label><input type="radio" name="coreMix" value="Conservative" required /> Conservative (20–40% equities, 60–80% bonds/cash) 保守（20–40%股票，60–80%債券／現金）</label>
+          <label><input type="radio" name="coreMix" value="Balanced" /> Balanced (40–60% equities, 40–60% bonds/cash) 均衡（40–60%股票，40–60%債券／現金）</label>
+          <label><input type="radio" name="coreMix" value="Growth" /> Growth (60–80% equities, 20–40% bonds/cash) 增長（60–80%股票，20–40%債券／現金）</label>
+          <label><input type="radio" name="coreMix" value="Aggressive" /> Aggressive (80–100% equities, 0–20% bonds/cash) 進取（80–100%股票，0–20%債券／現金）</label>
+        </div>
+
+        <label>5.2 Comfort with illiquidity (family) 對非流動性的接受程度（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="illiquidityComfort" value="None" required /> None 不接受</label>
+          <label><input type="radio" name="illiquidityComfort" value="Low" /> Low 低</label>
+          <label><input type="radio" name="illiquidityComfort" value="Moderate" /> Moderate 中等</label>
+          <label><input type="radio" name="illiquidityComfort" value="High" /> High 高</label>
+        </div>
+
+        <label for="illiquidityNotes" class="sub-label">Any specific illiquid assets considered or excluded? 有否考慮或排除的特定非流動資產？</label>
+        <textarea id="illiquidityNotes" name="illiquidityNotes"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Geographic and Currency Preferences (Family) 地區及貨幣偏好（家庭）</legend>
+
+        <label>5.3 Geographic allocation preference 地區配置偏好</label>
+        <div class="inline-options">
+          <label><input type="radio" name="geoPref" value="Global market-cap" required /> Global, market-cap-like 全球市值加權</label>
+          <label><input type="radio" name="geoPref" value="Home bias" /> Home bias (more domestic) 本地偏好（較多本地資產）</label>
+          <label><input type="radio" name="geoPref" value="Other" /> Other / Thematic 其他／主題</label>
+        </div>
+
+        <label for="geoDetails" class="sub-label">If home bias or other, describe. 如選擇本地偏好或其他，請描述。</label>
+        <textarea id="geoDetails" name="geoDetails"></textarea>
+
+        <label for="incomeCurrencies">5.4 Currencies of main family income 家庭主要收入貨幣</label>
+        <input type="text" id="incomeCurrencies" name="incomeCurrencies" />
+
+        <label for="spendingCurrencies">5.5 Currencies of main family expenses 家庭主要支出貨幣</label>
+        <input type="text" id="spendingCurrencies" name="spendingCurrencies" />
+
+        <label for="liabilityCurrencies">5.6 Currencies of future family liabilities 家庭未來負債貨幣</label>
+        <input type="text" id="liabilityCurrencies" name="liabilityCurrencies" />
+
+        <label>5.7 Currency risk preference (family) 貨幣風險偏好（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="currencyPreference" value="Unhedged" /> Comfortable with unhedged foreign assets 接受不對沖的外幣資產</label>
+          <label><input type="radio" name="currencyPreference" value="Partially hedged" /> Prefer partial hedging 偏好部分對沖</label>
+          <label><input type="radio" name="currencyPreference" value="Fully hedged" /> Prefer mostly / fully hedged 偏好大部分／全部對沖</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Instruments, Complexity, and Costs (Family) 工具、複雜度及費用（家庭）</legend>
+
+        <label>5.8 Instruments the family is comfortable with (check all) 家庭可接受的投資工具（選擇所有適用項）</label>
+        <div class="inline-options">
+          <label><input type="checkbox" name="instruments" value="Index funds/ETFs" /> Broad index funds / ETFs 廣泛指數基金／交易所買賣基金</label>
+          <label><input type="checkbox" name="instruments" value="Active funds" /> Actively managed funds 主動管理基金</label>
+          <label><input type="checkbox" name="instruments" value="Individual securities" /> Individual securities 個別證券</label>
+          <label><input type="checkbox" name="instruments" value="Derivatives" /> Derivatives (for hedging) 衍生工具（用於對沖）</label>
+          <label><input type="checkbox" name="instruments" value="Alternatives" /> Alternatives (PE, RE, HF, etc.) 另類投資（私募股權、房地產、對沖基金等）</label>
+        </div>
+
+        <label>5.9 Portfolio complexity preference (family) 投資組合複雜度偏好（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="complexityPref" value="Simple" required /> Simple (few funds, low complexity) 簡單（少量基金，低複雜度）</label>
+          <label><input type="radio" name="complexityPref" value="Moderate" /> Moderate 中等</label>
+          <label><input type="radio" name="complexityPref" value="Granular" /> Granular 精細</label>
+        </div>
+
+        <label>5.10 Sensitivity to fees 對費用的敏感度</label>
+        <div class="inline-options">
+          <label><input type="radio" name="feeSensitivity" value="Very sensitive" required /> Very fee-sensitive 非常敏感</label>
+          <label><input type="radio" name="feeSensitivity" value="Moderately sensitive" /> Moderately fee-sensitive 中等敏感</label>
+          <label><input type="radio" name="feeSensitivity" value="Less sensitive" /> Less fee-sensitive 較不敏感</label>
+        </div>
+
+        <label for="transactionConstraints">5.11 Transaction cost or minimum-size constraints (family) 交易成本或最低投資額限制（家庭）</label>
+        <textarea id="transactionConstraints" name="transactionConstraints"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 6. Family Risk Limits and Guardrails -->
+    <details>
+      <summary>6. Family Risk Limits and Guardrails 家庭風險限制及防護措施</summary>
+      <div class="section-description">
+        Joint risk limits for the family portfolio.<br/>
+        家庭投資組合的共同風險限制。
+      </div>
+
+      <fieldset>
+        <legend>Drawdown and Volatility Limits (Family) 回撤及波動性限制（家庭）</legend>
+
+        <label for="maxYearDrawdown">6.1 Max annual drawdown the family can accept (%) 家庭可接受的最大年度回撤（%）</label>
+        <input type="number" id="maxYearDrawdown" name="maxYearDrawdown" />
+
+        <label for="maxBearDrawdown">6.2 Max peak-to-trough loss in severe bear market (%) 嚴重熊市中最大峰谷損失（%）</label>
+        <input type="number" id="maxBearDrawdown" name="maxBearDrawdown" />
+
+        <label>6.3 Volatility vs return preference (family) 波動性與回報偏好（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="volPref" value="Smoother ride" /> Smoother ride 較平穩</label>
+          <label><input type="radio" name="volPref" value="Balanced" /> Balanced 均衡</label>
+          <label><input type="radio" name="volPref" value="Higher volatility" /> Higher volatility 較高波動</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Concentration, Leverage, and Derivatives (Family) 集中度、槓桿及衍生工具（家庭）</legend>
+
+        <label for="maxIssuer">6.4 Max in a single issuer (%) 單一發行人最大比重（%）</label>
+        <input type="number" id="maxIssuer" name="maxIssuer" />
+
+        <label for="maxSector">6.5 Max in a single sector/theme (%) 單一行業／主題最大比重（%）</label>
+        <input type="number" id="maxSector" name="maxSector" />
+
+        <label for="maxCountry">6.6 Max in a single country/region (%) 單一國家／地區最大比重（%）</label>
+        <input type="number" id="maxCountry" name="maxCountry" />
+
+        <label for="maxIlliquid">6.7 Max in illiquid assets overall (%) 非流動資產整體最大比重（%）</label>
+        <input type="number" id="maxIlliquid" name="maxIlliquid" />
+
+        <label>6.8 Willingness to use leverage (family) 使用槓桿的意願（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="leverageUse" value="No" /> No 否</label>
+          <label><input type="radio" name="leverageUse" value="Yes limited" /> Yes, limited 是，有限度</label>
+          <label><input type="radio" name="leverageUse" value="Yes flexible" /> Yes, flexible 是，靈活</label>
+        </div>
+
+        <label for="maxLeverage">6.9 If yes, max leverage ratio (e.g., 1.2x, 1.5x) 如是，最大槓桿比率（例如1.2倍、1.5倍）</label>
+        <input type="text" id="maxLeverage" name="maxLeverage" />
+
+        <label>6.10 Use of derivatives (family) 使用衍生工具（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="derivativesUse" value="None" /> No derivatives 不使用衍生工具</label>
+          <label><input type="radio" name="derivativesUse" value="Hedging only" /> For hedging only 僅用於對沖</label>
+          <label><input type="radio" name="derivativesUse" value="Hedging and tactical" /> For hedging and tactical positioning 用於對沖及策略性部署</label>
+        </div>
+
+        <label for="derivativesProhibitions" class="sub-label">Any explicit prohibitions (e.g., no uncovered options)? 有否明確禁止事項（例如：不可賣出無擔保期權）？</label>
+        <textarea id="derivativesProhibitions" name="derivativesProhibitions"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 7. Governance (Family) -->
+    <details>
+      <summary>7. Rebalancing, Monitoring, and Governance (Family) 再平衡、監察及管治（家庭）</summary>
+      <div class="section-description">
+        Family-level decision-making and review process.<br/>
+        家庭層面的決策及檢討流程。
+      </div>
+
+      <fieldset>
+        <legend>Rebalancing Policy 再平衡政策</legend>
+
+        <label>7.1 Review frequency for rebalancing (family) 再平衡檢討頻率（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="reviewFrequency" value="Quarterly" /> Quarterly 每季</label>
+          <label><input type="radio" name="reviewFrequency" value="Semi-annually" /> Semi-annually 每半年</label>
+          <label><input type="radio" name="reviewFrequency" value="Annually" /> Annually 每年</label>
+        </div>
+
+        <label>7.2 Rebalancing method 再平衡方法</label>
+        <div class="inline-options">
+          <label><input type="radio" name="rebalanceMethod" value="Calendar" /> Calendar-based 按日曆</label>
+          <label><input type="radio" name="rebalanceMethod" value="Threshold" /> Threshold-based 按偏離閾值</label>
+          <label><input type="radio" name="rebalanceMethod" value="Combination" /> Combination 混合</label>
+        </div>
+
+        <label for="rebalanceThreshold">7.3 If threshold-based, drift trigger (e.g., ±5 ppts) 如按閾值，偏離觸發點（例如±5個百分點）</label>
+        <input type="text" id="rebalanceThreshold" name="rebalanceThreshold" />
+
+        <label for="rebalanceTaxNotes">7.4 Tax / transaction considerations for rebalancing 再平衡的稅務／交易考慮</label>
+        <textarea id="rebalanceTaxNotes" name="rebalanceTaxNotes"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Performance Evaluation and Responsibilities 績效評估及責任</legend>
+
+        <label for="evaluationHorizon">7.5 Performance evaluation horizon 績效評估期限</label>
+        <input type="text" id="evaluationHorizon" name="evaluationHorizon" />
+
+        <label for="benchmarks">7.6 Benchmarks for the family portfolio 家庭投資組合的基準</label>
+        <textarea id="benchmarks" name="benchmarks"></textarea>
+
+        <label>7.7 Primary success metric 主要成功指標</label>
+        <div class="inline-options">
+          <label><input type="radio" name="successMetric" value="Meet required return" /> Meeting required return 達到所需回報</label>
+          <label><input type="radio" name="successMetric" value="Beat benchmarks" /> Beating benchmarks 跑贏基準</label>
+          <label><input type="radio" name="successMetric" value="Stay within risk limits" /> Staying within risk limits 維持在風險限制內</label>
+          <label><input type="radio" name="successMetric" value="Combination" /> Combination 混合</label>
+        </div>
+
+        <label for="decisionMaker">7.8 Who makes day-to-day investment decisions for the family? 誰負責家庭的日常投資決策？</label>
+        <input type="text" id="decisionMaker" name="decisionMaker" />
+
+        <label>7.9 How often should the family IPS be reviewed? 家庭投資政策聲明應多久檢討一次？</label>
+        <div class="inline-options">
+          <label><input type="radio" name="ipsReviewFrequency" value="Annually" /> Annually 每年</label>
+          <label><input type="radio" name="ipsReviewFrequency" value="Every 2–3 years" /> Every 2–3 years 每2至3年</label>
+          <label><input type="radio" name="ipsReviewFrequency" value="Event-driven" /> Event-driven only 僅因應事件</label>
+        </div>
+
+        <label for="ipsChangeTriggers">7.10 Events that trigger review of the family IPS 觸發家庭投資政策聲明檢討的事件</label>
+        <textarea id="ipsChangeTriggers" name="ipsChangeTriggers"></textarea>
+
+        <label for="reportFrequency">7.11 Desired frequency of portfolio reporting 期望的投資組合報告頻率</label>
+        <select id="reportFrequency" name="reportFrequency">
+          <option value="">Select... 請選擇...</option>
+          <option value="Monthly">Monthly 每月</option>
+          <option value="Quarterly">Quarterly 每季</option>
+          <option value="Semi-annually">Semi-annually 每半年</option>
+          <option value="Annually">Annually 每年</option>
+        </select>
+
+        <label for="importantMetrics">7.12 Key metrics the family wants to see regularly 家庭希望定期查看的主要指標</label>
+        <textarea id="importantMetrics" name="importantMetrics"></textarea>
+      </fieldset>
+    </details>
+
+    <!-- 8. Final Family Preferences and Commitments -->
+    <details>
+      <summary>8. Final Family Preferences and Commitments 最終家庭偏好及承諾</summary>
+      <div class="section-description">
+        Values, exclusions, behavioural commitments, and worries at the family level.<br/>
+        家庭層面的價值觀、排除項目、行為承諾及擔憂。
+      </div>
+
+      <fieldset>
+        <legend>Values, Behaviour, and Other Concerns 價值觀、行為及其他關注</legend>
+
+        <label for="exclusions">8.1 Industries, countries, or practices to exclude (family) 排除的行業、國家或做法（家庭）</label>
+        <textarea id="exclusions" name="exclusions"></textarea>
+
+        <label>8.2 Interest in ESG / impact / sustainable strategies (family) 對ESG／影響力／可持續策略的興趣（家庭）</label>
+        <div class="inline-options">
+          <label><input type="radio" name="esgInterest" value="No" /> No 否</label>
+          <label><input type="radio" name="esgInterest" value="Yes limited" /> Yes, for a limited portion 是，用於部分投資組合</label>
+          <label><input type="radio" name="esgInterest" value="Yes core" /> Yes, core part of portfolio 是，作為投資組合核心部分</label>
+        </div>
+
+        <label for="crisisRules">8.3 Pre-agreed rules for handling future market crises (family) 預先約定的未來市場危機處理規則（家庭）</label>
+        <textarea id="crisisRules" name="crisisRules"></textarea>
+
+        <label for="redLines">8.4 Family "red lines" (e.g., if portfolio falls by more than X%) 家庭「紅線」（例如：如投資組合下跌超過X%）</label>
+        <textarea id="redLines" name="redLines"></textarea>
+
+        <label for="worries">8.5 Main worries (inflation, FX, political risk, longevity, etc.) 主要擔憂（通脹、匯率、政治風險、長壽風險等）</label>
+        <textarea id="worries" name="worries"></textarea>
+
+        <label for="otherNotes">8.6 Any additional family instructions or notes 其他家庭指示或備註</label>
+        <textarea id="otherNotes" name="otherNotes"></textarea>
+      </fieldset>
+    </details>
+
+    <div class="buttons">
+      <button type="button" id="generateEmail">Generate Email Text 生成電郵文本</button>
+      <button type="button" id="exportJson">Export JSON 匯出JSON</button>
+      <button type="button" id="importJsonBtn">Import JSON 匯入JSON</button>
+      <input type="file" id="importJsonFile" accept=".json" style="display:none" />
+      <button type="reset">Reset Form 重設表格</button>
+    </div>
+
+    <div id="emailSection" style="display:none;">
+      <h2>Email Text to Copy 複製以下電郵文本</h2>
+      <p class="hint">
+        Select all the text below, copy it, and paste it into an email to your adviser.<br/>
+        請選取以下所有文字，複製並貼上至電郵發送給您的顧問。
+      </p>
+      <textarea id="emailOutput" readonly></textarea>
+    </div>
+  </form>
+
+  <script>
+    // Utility to get values
+    function getFieldValue(form, name) {
+      const elements = form.querySelectorAll('[name="' + name + '"]');
+      if (!elements || elements.length === 0) return '';
+      const type = elements[0].type;
+      if (type === 'radio') {
+        const checked = form.querySelector('[name="' + name + '"]:checked');
+        return checked ? checked.value : '';
+      }
+      if (type === 'checkbox') {
+        const checked = form.querySelectorAll('[name="' + name + '"]:checked');
+        return Array.from(checked).map(el => el.value).join(', ');
+      }
+      return elements[0].value || '';
+    }
+
+    // Build text for email
+    function buildEmailText(form) {
+      const lines = [];
+      function add(label, value) {
+        if (value !== undefined && value !== null && String(value).trim() !== '') {
+          lines.push(label + ': ' + value);
+        }
+      }
+
+      lines.push('FAMILY INVESTMENT POLICY STATEMENT (IPS) QUESTIONNAIRE');
+      lines.push('家庭投資政策聲明 (IPS) 問卷');
+      lines.push('======================================================');
+      lines.push('');
+
+      // 1. Family Profile and Context
+      lines.push('1. FAMILY PROFILE AND CONTEXT 家庭概況及背景');
+      lines.push('-----------------------------');
+      add('1.1 Family name 家庭姓氏', getFieldValue(form, 'familyName'));
+      add('1.2 Family country of tax residence 家庭稅務居住地', getFieldValue(form, 'familyCountry'));
+      add('1.3 Children / dependents 子女／受養人', getFieldValue(form, 'childrenDependents'));
+      add('1.4 Scope of this IPS (family) 本IPS範圍（家庭）', getFieldValue(form, 'familyScope'));
+      add('1.5 Current IPS asset value (family) 現時IPS資產價值（家庭）', getFieldValue(form, 'familyPortfolioValue'));
+      lines.push('');
+
+      lines.push('Client (Primary) 客戶（主要）');
+      add('1.6 Client name 客戶姓名', getFieldValue(form, 'clientName'));
+      add('1.7 Client age 客戶年齡', getFieldValue(form, 'clientAge'));
+      add('1.8 Client employment status 客戶就業狀況', getFieldValue(form, 'clientEmploymentStatus'));
+      add('1.9 Client income stability 客戶收入穩定性', getFieldValue(form, 'clientIncomeStability'));
+      add('1.10 Client annual income 客戶年收入', getFieldValue(form, 'clientAnnualIncome'));
+      add('1.11 Client investing experience (years) 客戶投資經驗（年數）', getFieldValue(form, 'clientInvestYears'));
+      add('1.12 Client products used 客戶使用過的產品', getFieldValue(form, 'clientProductsUsed'));
+      lines.push('');
+
+      lines.push('Spouse / Partner 配偶／伴侶');
+      add('1.13 Spouse name 配偶姓名', getFieldValue(form, 'spouseName'));
+      add('1.14 Spouse age 配偶年齡', getFieldValue(form, 'spouseAge'));
+      add('1.15 Spouse employment status 配偶就業狀況', getFieldValue(form, 'spouseEmploymentStatus'));
+      add('1.16 Spouse income stability 配偶收入穩定性', getFieldValue(form, 'spouseIncomeStability'));
+      add('1.17 Spouse annual income 配偶年收入', getFieldValue(form, 'spouseAnnualIncome'));
+      add('1.18 Spouse investing experience (years) 配偶投資經驗（年數）', getFieldValue(form, 'spouseInvestYears'));
+      add('1.19 Spouse products used 配偶使用過的產品', getFieldValue(form, 'spouseProductsUsed'));
+      lines.push('');
+
+      lines.push('Family-Level Financials 家庭整體財務');
+      add('1.20 Family annual income 家庭年收入', getFieldValue(form, 'familyAnnualIncome'));
+      add('1.21 Family annual savings capacity 家庭年儲蓄能力', getFieldValue(form, 'familyAnnualSavings'));
+      add('1.22 Family non-portfolio assets 家庭非投資組合資產', getFieldValue(form, 'familyNonPortfolioAssets'));
+      add('1.23 Family debts 家庭負債', getFieldValue(form, 'familyDebts'));
+      add('1.24 Family drawdown experience 家庭回撤經歷', getFieldValue(form, 'familyDrawdownExperience'));
+      lines.push('');
+
+      // 2. Family Goals and Return Objectives
+      lines.push('2. FAMILY GOALS AND RETURN OBJECTIVES 家庭目標及回報目標');
+      lines.push('-------------------------------------');
+      add('2.1 Goal 1 description 目標一描述', getFieldValue(form, 'goal1'));
+      add('    Goal 1 target amount 目標一金額', getFieldValue(form, 'goal1Amount'));
+      add('    Goal 1 target date 目標一日期', getFieldValue(form, 'goal1Date'));
+      add('2.2 Goal 2 description 目標二描述', getFieldValue(form, 'goal2'));
+      add('    Goal 2 target amount 目標二金額', getFieldValue(form, 'goal2Amount'));
+      add('    Goal 2 target date 目標二日期', getFieldValue(form, 'goal2Date'));
+      add('2.3 Goal 3 description 目標三描述', getFieldValue(form, 'goal3'));
+      add('    Goal 3 target amount 目標三金額', getFieldValue(form, 'goal3Amount'));
+      add('    Goal 3 target date 目標三日期', getFieldValue(form, 'goal3Date'));
+      add('2.4 Regular income from portfolio? 是否從投資組合定期提款？', getFieldValue(form, 'regularIncome'));
+      add('    Regular income amount 定期提款金額', getFieldValue(form, 'regularIncomeAmount'));
+      add('2.5 Spending flexibility 支出靈活度', getFieldValue(form, 'spendingFlexibility'));
+      add('2.6 One-off family cash needs 一次性現金需求', getFieldValue(form, 'oneOffNeeds'));
+      add('2.7 Minimum required family return 家庭最低要求回報', getFieldValue(form, 'minReturn'));
+      add('2.8 Primary family objective 家庭主要目標', getFieldValue(form, 'primaryObjective'));
+      add('2.9 First meaningful family withdrawal 首次大額提款', getFieldValue(form, 'firstWithdrawal'));
+      add('2.10 Total family investment horizon (years) 家庭總投資期限（年）', getFieldValue(form, 'totalHorizon'));
+      add('2.11 Horizon notes 期限備註', getFieldValue(form, 'horizonNotes'));
+      lines.push('');
+
+      // 3. Individual Risk Tolerance
+      lines.push('3. INDIVIDUAL RISK TOLERANCE (CLIENT AND SPOUSE) 個人風險承受能力（客戶及配偶）');
+      lines.push('-----------------------------------------------');
+      lines.push('Client 客戶');
+      add('3.1 Client reaction to 20% loss 客戶面對20%虧損的反應', getFieldValue(form, 'clientLoss20Reaction'));
+      add('3.2 Client max short-term loss 客戶最大短期虧損', getFieldValue(form, 'clientMaxShortTermLoss'));
+      add('3.3 Client preferred 10-year path 客戶偏好的10年路徑', getFieldValue(form, 'clientRiskReturnPreference'));
+      add('3.4 Client past crisis behaviour 客戶過往危機行為', getFieldValue(form, 'clientPastCrisisBehavior'));
+      add('3.5 Client risk-taking personality 客戶風險性格', getFieldValue(form, 'clientRiskPersonality'));
+      add('3.6 Client statement on losses vs returns 客戶對虧損與回報的看法', getFieldValue(form, 'clientLossStatement'));
+      lines.push('');
+      lines.push('Spouse 配偶');
+      add('3.7 Spouse reaction to 20% loss 配偶面對20%虧損的反應', getFieldValue(form, 'spouseLoss20Reaction'));
+      add('3.8 Spouse max short-term loss 配偶最大短期虧損', getFieldValue(form, 'spouseMaxShortTermLoss'));
+      add('3.9 Spouse preferred 10-year path 配偶偏好的10年路徑', getFieldValue(form, 'spouseRiskReturnPreference'));
+      add('3.10 Spouse past crisis behaviour 配偶過往危機行為', getFieldValue(form, 'spousePastCrisisBehavior'));
+      add('3.11 Spouse risk-taking personality 配偶風險性格', getFieldValue(form, 'spouseRiskPersonality'));
+      add('3.12 Spouse statement on losses vs returns 配偶對虧損與回報的看法', getFieldValue(form, 'spouseLossStatement'));
+      lines.push('');
+
+      // 4. Family Constraints
+      lines.push('4. FAMILY CONSTRAINTS 家庭限制');
+      lines.push('---------------------');
+      add('4.1 Family cash buffer 家庭現金緩衝', getFieldValue(form, 'cashBuffer'));
+      add('4.2 Other family liquidity considerations 其他流動性考慮', getFieldValue(form, 'otherLiquidity'));
+      add('4.3 Family time horizon type 家庭時間期限類型', getFieldValue(form, 'horizonType'));
+      add('4.4 Horizon details 期限詳情', getFieldValue(form, 'horizonDetail'));
+      add('4.5 Family marginal tax rates 家庭邊際稅率', getFieldValue(form, 'taxRate'));
+      add('4.6 Tax containers 稅務優惠帳戶', getFieldValue(form, 'taxContainers'));
+      add('4.7 Legal/regulatory constraints 法律／監管限制', getFieldValue(form, 'legalConstraints'));
+      add('4.8 ESG/ethical preferences ESG／道德偏好', getFieldValue(form, 'esgPreferences'));
+      add('4.9 Concentrated holdings 集中持倉', getFieldValue(form, 'concentratedHoldings'));
+      add('4.10 Unique family circumstances 特殊家庭情況', getFieldValue(form, 'uniqueCircumstances'));
+      lines.push('');
+
+      // 5. Family Asset Allocation and Preferences
+      lines.push('5. FAMILY ASSET ALLOCATION AND PRODUCT PREFERENCES 家庭資產配置及產品偏好');
+      lines.push('--------------------------------------------------');
+      add('5.1 Preferred core mix 偏好核心配置', getFieldValue(form, 'coreMix'));
+      add('5.2 Comfort with illiquidity 對非流動性的接受度', getFieldValue(form, 'illiquidityComfort'));
+      add('5.3 Illiquidity notes 非流動性備註', getFieldValue(form, 'illiquidityNotes'));
+      add('5.4 Geographic allocation preference 地區配置偏好', getFieldValue(form, 'geoPref'));
+      add('5.5 Geographic details 地區詳情', getFieldValue(form, 'geoDetails'));
+      add('5.6 Currencies of family income 家庭收入貨幣', getFieldValue(form, 'incomeCurrencies'));
+      add('5.7 Currencies of family expenses 家庭支出貨幣', getFieldValue(form, 'spendingCurrencies'));
+      add('5.8 Currencies of future family liabilities 家庭未來負債貨幣', getFieldValue(form, 'liabilityCurrencies'));
+      add('5.9 Currency risk preference 貨幣風險偏好', getFieldValue(form, 'currencyPreference'));
+      add('5.10 Instruments comfortable with 可接受的投資工具', getFieldValue(form, 'instruments'));
+      add('5.11 Portfolio complexity preference 投資組合複雜度偏好', getFieldValue(form, 'complexityPref'));
+      add('5.12 Fee sensitivity 費用敏感度', getFieldValue(form, 'feeSensitivity'));
+      add('5.13 Transaction/minimum constraints 交易／最低額限制', getFieldValue(form, 'transactionConstraints'));
+      lines.push('');
+
+      // 6. Family Risk Limits and Guardrails
+      lines.push('6. FAMILY RISK LIMITS AND GUARDRAILS 家庭風險限制及防護措施');
+      lines.push('------------------------------------');
+      add('6.1 Max annual drawdown (%) 最大年度回撤（%）', getFieldValue(form, 'maxYearDrawdown'));
+      add('6.2 Max bear-market drawdown (%) 最大熊市回撤（%）', getFieldValue(form, 'maxBearDrawdown'));
+      add('6.3 Volatility vs return preference 波動性與回報偏好', getFieldValue(form, 'volPref'));
+      add('6.4 Max single issuer (%) 單一發行人最大比重（%）', getFieldValue(form, 'maxIssuer'));
+      add('6.5 Max single sector/theme (%) 單一行業／主題最大比重（%）', getFieldValue(form, 'maxSector'));
+      add('6.6 Max single country/region (%) 單一國家／地區最大比重（%）', getFieldValue(form, 'maxCountry'));
+      add('6.7 Max illiquid assets (%) 非流動資產最大比重（%）', getFieldValue(form, 'maxIlliquid'));
+      add('6.8 Willingness to use leverage 使用槓桿意願', getFieldValue(form, 'leverageUse'));
+      add('6.9 Max leverage ratio 最大槓桿比率', getFieldValue(form, 'maxLeverage'));
+      add('6.10 Use of derivatives 使用衍生工具', getFieldValue(form, 'derivativesUse'));
+      add('6.11 Derivative prohibitions 衍生工具禁止事項', getFieldValue(form, 'derivativesProhibitions'));
+      lines.push('');
+
+      // 7. Governance
+      lines.push('7. REBALANCING, MONITORING, AND GOVERNANCE 再平衡、監察及管治');
+      lines.push('------------------------------------------');
+      add('7.1 Review frequency for rebalancing 再平衡檢討頻率', getFieldValue(form, 'reviewFrequency'));
+      add('7.2 Rebalancing method 再平衡方法', getFieldValue(form, 'rebalanceMethod'));
+      add('7.3 Rebalancing thresholds 再平衡閾值', getFieldValue(form, 'rebalanceThreshold'));
+      add('7.4 Tax/transaction notes for rebalancing 再平衡稅務／交易備註', getFieldValue(form, 'rebalanceTaxNotes'));
+      add('7.5 Performance evaluation horizon 績效評估期限', getFieldValue(form, 'evaluationHorizon'));
+      add('7.6 Benchmarks 基準', getFieldValue(form, 'benchmarks'));
+      add('7.7 Primary success metric 主要成功指標', getFieldValue(form, 'successMetric'));
+      add('7.8 Decision-maker(s) 決策者', getFieldValue(form, 'decisionMaker'));
+      add('7.9 IPS review frequency IPS檢討頻率', getFieldValue(form, 'ipsReviewFrequency'));
+      add('7.10 IPS revision triggers IPS修訂觸發條件', getFieldValue(form, 'ipsChangeTriggers'));
+      add('7.11 Report frequency 報告頻率', getFieldValue(form, 'reportFrequency'));
+      add('7.12 Key metrics to report 報告主要指標', getFieldValue(form, 'importantMetrics'));
+      lines.push('');
+
+      // 8. Final Family Preferences and Commitments
+      lines.push('8. FINAL FAMILY PREFERENCES AND COMMITMENTS 最終家庭偏好及承諾');
+      lines.push('-------------------------------------------');
+      add('8.1 Exclusions (industries, countries, practices) 排除項目（行業、國家、做法）', getFieldValue(form, 'exclusions'));
+      add('8.2 Interest in ESG/impact strategies 對ESG／影響力策略的興趣', getFieldValue(form, 'esgInterest'));
+      add('8.3 Crisis-handling rules 危機處理規則', getFieldValue(form, 'crisisRules'));
+      add('8.4 Family red lines 家庭紅線', getFieldValue(form, 'redLines'));
+      add('8.5 Main worries 主要擔憂', getFieldValue(form, 'worries'));
+      add('8.6 Additional notes 其他備註', getFieldValue(form, 'otherNotes'));
+
+      return lines.join('\n');
+    }
+
+    // Custom validation focused on client + spouse key fields and required radios/text
+    function validateForm() {
+      const form = document.getElementById('ipsForm');
+
+      // Let browser check basic HTML5 constraints first
+      if (!form.reportValidity()) {
+        return false;
+      }
+
+      // Custom: at least one product used for client and spouse (optional but good practice)
+      const clientProducts = form.querySelectorAll('input[name="clientProductsUsed"]:checked');
+      if (clientProducts.length === 0) {
+        alert('Please select at least one investment product used by the client (Question 1.12).\n請選擇至少一項客戶曾使用的投資產品（問題1.12）。');
+        form.querySelector('input[name="clientProductsUsed"]').focus();
+        return false;
+      }
+
+      const spouseProducts = form.querySelectorAll('input[name="spouseProductsUsed"]:checked');
+      if (spouseProducts.length === 0) {
+        alert('Please select at least one investment product used by the spouse/partner (Question 1.19).\n請選擇至少一項配偶／伴侶曾使用的投資產品（問題1.19）。');
+        form.querySelector('input[name="spouseProductsUsed"]').focus();
+        return false;
+      }
+
+      return true;
+    }
+
+    // --- Auto-save to localStorage on every input/change ---
+    const STORAGE_KEY = 'ipsFormData';
+
+    function serializeForm() {
+      const form = document.getElementById('ipsForm');
+      const data = {};
+      const elements = form.elements;
+      for (let i = 0; i < elements.length; i++) {
+        const el = elements[i];
+        if (!el.name) continue;
+        if (el.type === 'radio') {
+          if (el.checked) data[el.name] = el.value;
+        } else if (el.type === 'checkbox') {
+          if (!data[el.name]) data[el.name] = [];
+          if (el.checked) data[el.name].push(el.value);
+        } else {
+          data[el.name] = el.value;
+        }
+      }
+      return data;
+    }
+
+    function restoreForm(data) {
+      const form = document.getElementById('ipsForm');
+      const elements = form.elements;
+      for (let i = 0; i < elements.length; i++) {
+        const el = elements[i];
+        if (!el.name || !(el.name in data)) continue;
+        if (el.type === 'radio') {
+          el.checked = (el.value === data[el.name]);
+        } else if (el.type === 'checkbox') {
+          el.checked = Array.isArray(data[el.name]) && data[el.name].includes(el.value);
+        } else {
+          el.value = data[el.name];
+        }
+      }
+    }
+
+    function saveToStorage() {
+      const data = serializeForm();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadFromStorage() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try {
+          const data = JSON.parse(raw);
+          restoreForm(data);
+        } catch (e) { /* ignore corrupted data */ }
+      }
+    }
+
+    // Save on every input and change event
+    document.getElementById('ipsForm').addEventListener('input', saveToStorage);
+    document.getElementById('ipsForm').addEventListener('change', saveToStorage);
+
+    // Clear storage on form reset
+    document.getElementById('ipsForm').addEventListener('reset', function () {
+      setTimeout(function () { localStorage.removeItem(STORAGE_KEY); }, 0);
+    });
+
+    // Restore saved data on page load
+    loadFromStorage();
+
+    // --- Export JSON ---
+    document.getElementById('exportJson').addEventListener('click', function () {
+      const data = serializeForm();
+      const json = JSON.stringify(data, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'IPS_Questionnaire_Backup.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    // --- Import JSON ---
+    document.getElementById('importJsonBtn').addEventListener('click', function () {
+      document.getElementById('importJsonFile').click();
+    });
+
+    document.getElementById('importJsonFile').addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (evt) {
+        try {
+          const data = JSON.parse(evt.target.result);
+          restoreForm(data);
+          saveToStorage();
+          alert('Import successful!\n匯入成功！');
+        } catch (err) {
+          alert('Invalid JSON file.\nJSON檔案無效。');
+        }
+      };
+      reader.readAsText(file);
+      e.target.value = '';
+    });
+
+    // --- Generate Email ---
+    document.getElementById('generateEmail').addEventListener('click', function () {
+      const form = document.getElementById('ipsForm');
+      if (!validateForm()) {
+        return;
+      }
+      const output = buildEmailText(form);
+      document.getElementById('emailOutput').value = output;
+      document.getElementById('emailSection').style.display = 'block';
+      window.scrollTo({ top: document.getElementById('emailSection').offsetTop, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
